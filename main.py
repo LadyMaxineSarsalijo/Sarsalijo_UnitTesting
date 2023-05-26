@@ -1,13 +1,15 @@
 import unittest
 
 class MinTestCase(unittest.TestCase):
-     def test_positive_numbers(self):
+
+    def min(n1, n2):
+        min_of_numbers = n1 - n2
+        return min_of_numbers
+
+  
+    def test_positive_numbers(self):
         result = min(5, 10)
         self.assertEqual(result, 5)
-        
-def min(n1, n2):
-    min_of_numbers = n1 - n2
-    return min_of_numbers
 
     def test_negative_numbers(self):
         result = min(-5, -10)
